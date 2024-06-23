@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Basics and Local State</title>
+  </head>
+  <body>
+    <form>
+      <input placeholder="Enter component name" type="text" />
+      <input placeholder="Enter state value" type="number" />
+      <button onclick="stateChange(event)">State Change</button>
+    </form>
+    <div id="injection">
+      <div>
+        <p id="default"></p>
+      </div>
+    </div>
+    <form>
+      <input placeholder="Enter component id" type="text" id="newCompInput" />
+      <button
+        onclick="createNewNode(event, document.getElementById('newCompInput').value)"
+      >
+        Add Component
+      </button>
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>
